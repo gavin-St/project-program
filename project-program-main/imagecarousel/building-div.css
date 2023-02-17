@@ -1,0 +1,114 @@
+* {box-sizing: border-box}
+body {font-family: Convergence;}
+.slide {display: none}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+
+  h1 { color: black; font-family: Convergence; font-size: 36px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Convergence; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Convergence; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Convergence; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Convergence; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+p {font-size: 18px; color: black;}
+
+.myDiv {
+    width: 30%;
+    border: 2px outset #555555;
+    border-radius: 5px;
+    background-color: white;    
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .slideshow {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    background-color: white;
+    border-radius:5px;
+    border-color: black;
+    border: 2px;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 24px;
+    position: absolute;
+    bottom: 43%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  #lastSlide {
+    filter: brightness(25%);
+  }
+  #lastText {
+    vertical-align: middle;
+    font-size: 18px;
+    color: white;
+  }
+
+  .otherPosts {
+    background-color: transparent;
+    border: none;
+    font-family: Convergence;
+    padding: none;
+  }
+  .otherPosts:hover {
+    cursor: pointer;
+  }

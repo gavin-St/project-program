@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "266576880845",
+    "firebase_url": "https://project-program-44d5b-default-rtdb.firebaseio.com",
+    "project_id": "project-program-44d5b",
+    "storage_bucket": "project-program-44d5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266576880845:android:232cf7336a7e602303b584",
+        "android_client_info": {
+          "package_name": "com.syndesi.uwnest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266576880845-ghm618lh89745utjjlr8m2rbl3gkcbik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgyhuKBbb_oVCllihB2GZ2M-cVVIXFn58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266576880845-ghm618lh89745utjjlr8m2rbl3gkcbik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

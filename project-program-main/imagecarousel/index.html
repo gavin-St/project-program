@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Div</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence" />
+    <link rel="stylesheet" type="text/css" href="building-div.css" media="screen" /> 
+  </head>
+  <body>
+    <div class="myDiv">
+        <h1>Davis Centre (DC)</h1>
+        <div class="slideshow">
+            <div class="slide">
+                <img src="https://uwaterloo.ca/world-wetlands-day/sites/ca.world-wetlands-day/files/styles/wide-body-750px-wide/public/uploads/images/dc.jpg?itok=csjQ3tHn">
+                <p>"Wow I love DC so much it's my favourite place ever!"</p>
+            </div>
+
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/0e/d5/72/0ed572ab888819c18bfeef8b2f9ac4f3.jpg">
+                <p>"This is a really good caption."</p>
+            </div>
+
+            <button class="otherPosts">
+            <div class="slide">
+                <img src="https://live.staticflickr.com/5158/14228062556_27e7dedd43_b.jpg"  id="lastSlide">
+                <div class="text" id="lastText">View more posts</div>
+            </div>
+        </button>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+  </body>
+
+
+
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</html>
