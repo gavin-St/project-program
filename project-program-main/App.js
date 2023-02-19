@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import NavBar from './src/components/navbar';
+import Home from './src/components/home-page';
+import BuildingList from './src/components/building-list';
 
 const Stack = createNativeStackNavigator();
 
