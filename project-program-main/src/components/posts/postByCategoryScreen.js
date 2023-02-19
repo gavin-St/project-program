@@ -1,7 +1,7 @@
 import React,{ Component ,PropType, Children } from 'react';
 import {FlatList,ActivityIndicator,ImageBackground,View,ScrollView,Image,TouchableOpacity, Dimensions,} from 'react-native';
 import {Header,Title,Card,Text,Left,Right,Button,Body,Container,Icon, Row} from 'native-base';
-import CategoryPostCard from '../../components/CategoryPostCard';
+import CategoryPostCard from '../../components/category-post-card';
 import ReactPlaceholder from 'react-placeholder';
 
 import SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient'
