@@ -168,7 +168,7 @@ export const Test1 = () => (
       <Button
         title="Engineering 3 (E3)"
         color="#e0cf0d"
-        onPress={() => Alert.alert('Button pressed')}
+        onPress={() => Alert.alert('Button pressed.')}
       />
     </View>
     </ScrollView>
