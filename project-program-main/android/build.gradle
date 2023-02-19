@@ -14,6 +14,5 @@ buildscript {
     // https://firebase.google.com/docs/android/setup#available-libraries
     // ... other dependencies
     classpath 'com.google.gms:google-services:4.3.14'
-    // Add me --- /\
   }
 }
