@@ -4,6 +4,26 @@ import {Header,Title,Card,CardItem,Text,Left,Right,Button,Body,Container,Icon, R
 import moment from "moment";
 import LinearGradient from 'react-native-linear-gradient';
 
+function uploadFile(files) {
+  const storageRef = firebase.storage().ref();
+  const imgRef = storageRef.child("posts.");
+
+  const file = files.item(0);
+
+  const task = imgRef.put(file)
+
+  // successful upload
+  task.then(snapshot => {
+      const url = snapshot.downloadURL
+  })
+
+  // monitor progress
+  task.on('state_changed', snapshot => {
+      console.log(snapshot)
+
+  })
+}
+
 export default class CategoryPostCard extends Component{
 
     constructor(props) {

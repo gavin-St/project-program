@@ -5,6 +5,26 @@ import { collection, getDocs } from "@firebase/firestore";
 import { db } from "../firebase-config";
 import { Post } from './post'
 
+const functions = require('firebase-functions');
+
+const admin = require("firebase-admin");
+admin.initializeApp();
+
+
+exports.sendMessage = functions.firestore
+    .document('posts/{newPost}')
+    .onCreate(event => {
+
+    const docId = event.params.productId;
+
+    const name = event.after.data().name;
+
+    const productRef = admin.firestore().collection('posts').doc(docId)
+
+    return productRef.update({ message: ``})
+
+});
+
 export function PostList() {
     const [loading, setLoading] = useState(false);
     const [posts, setPosts] = useState([]);
