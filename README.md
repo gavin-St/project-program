@@ -1,4 +1,4 @@
-# Our project-program: UWNests
+# Project-program: UWNests
 ![intro](https://cdn.discordapp.com/attachments/789306307554705408/1065528713887875112/image.png)
 
 A UW CSC Project Program project.
