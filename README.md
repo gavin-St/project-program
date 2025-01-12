@@ -16,4 +16,4 @@ Especially in a post-pandemic environment, many students may struggle to meet ot
 
 <img width="1920" alt="Screenshot 2025-01-12 at 1 51 01 AM" src="https://github.com/user-attachments/assets/66f59a60-d91f-4600-a8e2-65b0c191ad28" />
 
-(Outdated) Backend demo live at https://project-program-44d5b.web.app/
+Backend demo live at https://project-program-44d5b.web.app/
